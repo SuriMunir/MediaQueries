@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleMedia.css" />
+    <title>Media Query</title>
+  </head>
+  <body>
+    <h2>Screen Size: <span id="span"></span>PX</h2>
+    <div>
+      <h1>Small Mobile Devices</h1>
+      <h1>Mobile Devices</h1>
+      <h1>Tablet Devices</h1>
+      <h1>Laptop Devices</h1>
+      <h1>X-Large Devices</h1>
+    </div>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuCPQ6tQts6E9dfFdefHSjRqFaVPsJv2jdA&usqp=CAU"
+      alt=""
+    />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      consequatur inventore neque eos! Dicta similique esse aperiam sed iusto
+      nobis eius earum fugiat, odio maxime iste saepe omnis magnam temporibus
+      asperiores eveniet porro illo voluptatum est. Minima libero similique
+      incidunt rerum ullam velit quae ipsa dolores quia, nisi mollitia amet.
+      Maxime eaque similique rerum, cupiditate pariatur, rem eveniet minus
+      laborum nesciunt fuga, vel consectetur magni ipsum quo cum! Doloribus
+      autem odit nesciunt, ipsum nihil sequi incidunt, rem vel eligendi
+      voluptatum cupiditate sapiente cum totam pariatur aliquam ad tempore
+      facere commodi. Amet repellendus harum eaque illo suscipit doloribus sit
+      nemo asperiores.
+    </p>
+
+    <script>
+      window.addEventListener('resize', function () {
+        let screenSize = window.innerWidth;
+        document.querySelector('#span').textContent = screenSize;
+      });
+    </script>
+  </body>
+</html>
